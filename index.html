@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Survey Form</title>
+</head>
+<body>
+    <section id="heading">
+        <h1 id="title">Professional Development Survey Form</h1>
+        <p>Thank you for taking the time to help us meet your needs</p>
+    </section>
+    <form id="survey-form">
+        <fieldset>
+            <label id="name-label">Name</label>
+            <input class="form-control" name="full-name" type="text" placeholder="Enter full name" required />
+            <label id="email-label">Email</label>
+            <input class="form-control" name="email" type="email" placeholder="Enter your email" required />
+            <label id="number-label">Age (optional)</label>
+            <input class="form-control" name="age" type="number" min="18" max="100" placeholder="age" />
+        </fieldset>
+        <fieldset>
+            <label>What is your role?
+                <select id="dropdown" class="form-control">
+                    <option value="">(select one)</option>
+                    <option value="1">Teacher</option>
+                    <option value="2">Administrator</option>
+                    <option value="3">Other</option>
+                </select>
+            </label>
+        </fieldset>
+        <fieldset>What parts of the program did you enjoy? (select all that apply)
+            <label id="program"><input name="program-highlights" value="love-html" type="checkbox" /> Learning HTML</label>
+            <label id="program"><input name="program-highlights" value="love-css" type="checkbox" /> Learning CSS</label>
+            <label id="program"><input name="program-highlights" value="love-teacher" type="checkbox" /> Having a teacher to help guide me</label>
+            <label id="program"><input name="program-highlights" value="love-classmates" type="checkbox" /> Having the support of classmates</label>
+        </fieldset>
+        <fieldset>How would you rate this web development program? 
+            <label id="ratings"><input name="rate-group" type="radio" /> Excellent</label>
+            <label id="ratings"><input name="rate-group" type="radio" /> Average</label>
+            <label id="ratings"><input name="rate-group" type="radio" /> Poor</label>
+        </fieldset>
+        <fieldset>Comments or suggestions?
+            <label><textarea name="comments" rows="3" cols="30" placeholder="I enjoyed.../I think what should be improved..."></textarea></label>
+        </fieldset>
+        <fieldset>
+            <button type="submit" id="submit" class="submit-button"> Submit </button>
+        </fieldset>
+
+    </form>
+</body>
+</html>
