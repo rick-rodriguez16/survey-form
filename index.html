@@ -13,7 +13,7 @@
 <body>
     <section id="heading">
         <h1 id="title">Professional Development Survey Form</h1>
-        <p>Thank you for taking the time to help us meet your needs</p>
+        <p id="p-header">Thank you for taking the time to help us meet your needs</p>
     </section>
     <form id="survey-form">
         <fieldset>
@@ -22,11 +22,11 @@
             <label id="email-label">Email</label>
             <input class="form-control" name="email" type="email" placeholder="Enter your email" required />
             <label id="number-label">Age (optional)</label>
-            <input class="form-control" name="age" type="number" min="18" max="100" placeholder="age" />
+            <input class="form-control" name="age" type="number" min="18" max="100" placeholder="Age" />
         </fieldset>
         <fieldset>
             <label>What is your role?
-                <select id="dropdown" class="form-control">
+                <select id="dropdown" class="form-control" required>
                     <option value="">(select one)</option>
                     <option value="1">Teacher</option>
                     <option value="2">Administrator</option>
@@ -46,12 +46,13 @@
             <label id="ratings"><input name="rate-group" type="radio" /> Poor</label>
         </fieldset>
         <fieldset>Comments or suggestions?
-            <label><textarea name="comments" rows="3" cols="30" placeholder="I enjoyed.../I think what should be improved..."></textarea></label>
+            <label>
+                <textarea id="comments" name="comments" rows="8" cols="30" placeholder="I enjoyed.../I think what should be improved..."></textarea>
+            </label>
         </fieldset>
         <fieldset>
             <button type="submit" id="submit" class="submit-button"> Submit </button>
         </fieldset>
-
     </form>
 </body>
 </html>
