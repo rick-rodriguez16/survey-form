@@ -13,16 +13,16 @@
 <body>
     <section id="heading">
         <h1 id="title">Professional Development Survey Form</h1>
-        <p id="p-header">Thank you for taking the time to help us meet your needs</p>
+        <p id="description">Thank you for taking the time to help us meet your needs</p>
     </section>
     <form id="survey-form">
         <fieldset>
             <label id="name-label">Name</label>
-            <input class="form-control" name="full-name" type="text" placeholder="Enter full name" required />
+            <input id="name" class="form-control" name="full-name" type="text" placeholder="Enter full name" required />
             <label id="email-label">Email</label>
-            <input class="form-control" name="email" type="email" placeholder="Enter your email" required />
+            <input id="email" class="form-control" name="email" type="email" placeholder="Enter your email" required />
             <label id="number-label">Age (optional)</label>
-            <input class="form-control" name="age" type="number" min="18" max="100" placeholder="Age" />
+            <input id="number" class="form-control" name="age" type="number" min="18" max="100" placeholder="Age" />
         </fieldset>
         <fieldset>
             <label>What is your role?
@@ -41,9 +41,9 @@
             <label id="program"><input name="program-highlights" value="love-classmates" type="checkbox" /> Having the support of classmates</label>
         </fieldset>
         <fieldset>How would you rate this web development program? 
-            <label id="ratings"><input name="rate-group" type="radio" /> Excellent</label>
-            <label id="ratings"><input name="rate-group" type="radio" /> Average</label>
-            <label id="ratings"><input name="rate-group" type="radio" /> Poor</label>
+            <label id="ratings"><input name="rate-group" type="radio" value="excellent" /> Excellent</label>
+            <label id="ratings"><input name="rate-group" type="radio" value="average" /> Average</label>
+            <label id="ratings"><input name="rate-group" type="radio" value="poor" /> Poor</label>
         </fieldset>
         <fieldset>Comments or suggestions?
             <label>
